@@ -53,6 +53,10 @@ const config: MenuEntry[] = [
         label: 'QuickSwap',
         href: 'https://info.quickswap.exchange/token/0xD40D22C658c97AC67360A1d46A0fD4922957417E',
       },
+      {
+        label: 'DappRadar',
+        href: 'https://dappradar.com/polygon/defi/polygoat-finance',
+      },
     ],
   },
   {
@@ -65,14 +69,14 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://polygoat.gitbook.io/polygoat/',
+        href: 'https://polygoat.gitbook.io/polygoat',
       },
     ],
   },
   {
-    label: 'Audit by TechRate (SOON)',
+    label: 'Audit (SOON)',
     icon: 'AuditIcon',
-    href: 'polygoat.finance',
+    href: 'https://www.polygoat.finance',
   },
 ]
 

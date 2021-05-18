@@ -208,14 +208,14 @@ const farms: FarmConfig[] = [
     lpSymbol: 'LINK',
     decimal: 18,
     lpAddresses: {
-      137: '0x3c986748414a812e455dcd5418246b8fded5c369'
+      137: '0x70cee55c98f6da2685807611f115ea737d4a248e'
     },
     tokenSymbol: 'LINK',
     tokenAddresses: {
       137: '0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39'
     },
-    quoteTokenSymbol: QuoteToken.WMATIC,
-    quoteTokenAdresses: contracts.wmatic,
+    quoteTokenSymbol: QuoteToken.USDC,
+    quoteTokenAdresses: contracts.usdc,
   },
 
 
