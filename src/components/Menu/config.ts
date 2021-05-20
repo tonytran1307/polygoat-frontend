@@ -78,9 +78,9 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Audit (SOON)',
+    label: 'Audit by Solidity Finance',
     icon: 'AuditIcon',
-    href: 'https://www.polygoat.finance',
+    href: 'https://solidity.finance/audits/PolyGoat/',
   },
 ]
 
