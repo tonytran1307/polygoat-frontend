@@ -16,12 +16,12 @@ import useAllEarnings from '../../../hooks/useAllEarnings'
 import { getBalanceNumber } from '../../../utils/formatBalance'
 
 const StyledFarmStakingCard = styled(Card)`
-position: relative;
-overflow: hidden;
-z-index: 2;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 
-&:before {
-  content: ' ';
+  &:before {
+    content: ' ';
     display: block;
     position: absolute;
     left: 0;
@@ -30,10 +30,10 @@ z-index: 2;
     height: 100%;
     z-index: -1;
     opacity: 0.2;
-  background-image: url('/images/egg/2a.png');
-  background-repeat: no-repeat;
-  background-position: top right;
-  min-height: 376px;
+    background-image: url('/images/egg/2a.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    min-height: 376px;
   }
 `
 
@@ -89,7 +89,7 @@ const FarmedStakingCard = () => {
         <CardImage src="/images/egg/2.png" alt="cake logo" width={64} height={64} />
         <Block>
           <Label>{TranslateString(544, 'EGG to Harvest')}</Label>
-          <CakeHarvestBalance earningsSum={earningsSum}/>
+          <CakeHarvestBalance earningsSum={earningsSum} />
           <Label>~${(eggPrice * earningsSum).toFixed(2)}</Label>
         </Block>
         <Block>

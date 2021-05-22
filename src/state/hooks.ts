@@ -45,7 +45,6 @@ export const useFarmUser = (pid) => {
   }
 }
 
-
 // Pools
 
 export const usePools = (account): Pool[] => {
@@ -75,31 +74,30 @@ export const usePriceBnbBusd = (): BigNumber => {
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const pid = 0; // GOAT-USDC LP
-  const farm = useFarmFromPid(pid);
-  return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO;
+  const pid = 0 // ROOSTER-USDC LP
+  const farm = useFarmFromPid(pid)
+  return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
-
 export const useTotalValue = (): BigNumber => {
-  const farms = useFarms();
-  const bnbPrice = usePriceBnbBusd();
-  const cakePrice = usePriceCakeBusd();
-  let value = new BigNumber(0);
+  const farms = useFarms()
+  const bnbPrice = usePriceBnbBusd()
+  const cakePrice = usePriceCakeBusd()
+  let value = new BigNumber(0)
   for (let i = 0; i < farms.length; i++) {
     const farm = farms[i]
     if (farm.lpTotalInQuoteToken) {
-      let val;
+      let val
       if (farm.quoteTokenSymbol === QuoteToken.WMATIC) {
-        val = (bnbPrice.times(farm.lpTotalInQuoteToken));
+        val = bnbPrice.times(farm.lpTotalInQuoteToken)
       }
       if (farm.quoteTokenSymbol === QuoteToken.CAKE) {
-        val = (cakePrice.times(farm.lpTotalInQuoteToken));
-      }else{
-        val = (farm.lpTotalInQuoteToken);
+        val = cakePrice.times(farm.lpTotalInQuoteToken)
+      } else {
+        val = farm.lpTotalInQuoteToken
       }
-      value = value.plus(val);
+      value = value.plus(val)
     }
   }
-  return value;
+  return value
 }

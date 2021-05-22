@@ -10,7 +10,6 @@ import CakeStats from './components/CakeStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 import TwitterCard from './components/TwitterCard'
 
-
 const Hero = styled.div`
   align-items: center;
   display: flex;
@@ -21,7 +20,7 @@ const Hero = styled.div`
   padding-top: 116px;
   text-align: center;
   position: relative;
-  z-index:2;
+  z-index: 2;
   border-radius: 30px;
 
   &:before {
@@ -41,7 +40,6 @@ const Hero = styled.div`
   }
 
   ${({ theme }) => theme.mediaQueries.lg} {
-
     padding-top: 0;
     position: relative;
     z-index: 2;
@@ -58,8 +56,8 @@ const Hero = styled.div`
       z-index: -1;
       opacity: 0.6;
       background-image: url('/images/egg/3b.png');
-    background-position: left center, right center;
-    background-repeat: no-repeat;
+      background-position: left center, right center;
+      background-repeat: no-repeat;
     }
   }
 `
@@ -92,20 +90,20 @@ const Home: React.FC = () => {
 
   return (
     <Page>
-      <Heading as="h1" size="xl" mb="24px" color="secondary" >
-          {TranslateString(579, 'Yield Farming has begun.')}
-        </Heading>
-       <Timer />
+      <Heading as="h1" size="xl" mb="24px" color="secondary">
+        {TranslateString(579, 'Yield Farming has begun.')}
+      </Heading>
+      <Timer />
       <Hero>
         <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {TranslateString(576, 'PolyGoat Finance')}
+          {TranslateString(576, 'PolyRooster Finance')}
         </Heading>
         <Text>{TranslateString(578, 'Last generation yield farming based on polygon')}</Text>
       </Hero>
       <div>
         <Cards>
           <FarmStakingCard />
-          <TwitterCard/>
+          <TwitterCard />
           <CakeStats />
           <TotalValueLockedCard />
         </Cards>

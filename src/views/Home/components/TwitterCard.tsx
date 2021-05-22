@@ -11,7 +11,6 @@ import CardValue from './CardValue'
 import { useFarms } from '../../../state/hooks'
 import useTheme from '../../../hooks/useTheme'
 
-
 const StyledTwitterCard = styled(Card)`
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +27,7 @@ const Row = styled.div`
 const TwitterCard = () => {
   const TranslateString = useI18n()
 
-  const { isDark, toggleTheme, theme } = useTheme();
+  const { isDark, toggleTheme, theme } = useTheme()
 
   return (
     <StyledTwitterCard>
@@ -39,13 +38,13 @@ const TwitterCard = () => {
         <Timeline
           dataSource={{
             sourceType: 'profile',
-            screenName: 'PolyGoatFinance'
+            screenName: 'PolyRoosterFinance',
           }}
           options={{
             height: '300',
-            chrome: "noheader, nofooter",
-            width: "400",
-            theme: isDark ? 'dark' : 'light'
+            chrome: 'noheader, nofooter',
+            width: '400',
+            theme: isDark ? 'dark' : 'light',
           }}
         />
       </CardBody>

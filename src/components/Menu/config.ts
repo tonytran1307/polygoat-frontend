@@ -12,7 +12,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://quickswap.exchange/#/swap?outputCurrency=0xD40D22C658c97AC67360A1d46A0fD4922957417E',
+        href: 'https://quickswap.exchange/#/swap?outputCurrency=0xff4e56a6783b0ef9b6636dcbba38f6dd7be23bbf',
       },
       {
         label: 'Liquidity',
@@ -51,7 +51,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'QuickSwap',
-        href: 'https://info.quickswap.exchange/token/0xD40D22C658c97AC67360A1d46A0fD4922957417E',
+        href: 'https://info.quickswap.exchange/token/0xfF4E56a6783B0EF9b6636dCbbA38f6Dd7be23Bbf',
       },
       {
         label: 'Vfat Tools',
@@ -69,7 +69,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/PolyGoatFinance',
+        href: 'https://github.com/PolyRoosterFinance',
       },
       {
         label: 'Docs',
